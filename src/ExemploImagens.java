@@ -9,7 +9,7 @@ public class ExemploImagens extends Application {
     @Override
     public void start(Stage primaryStage) {
         // caminho absoluto para a imagem no Windows
-        String caminhoImagem = "file:///C:/Users/davim/OneDrive-/Documentos/Curso Java - Udemy/imagem.png";
+        String caminhoImagem = "file:///C:/Users/davim/OneDrive/Documentos/projeto_JavaFX/minhas-imagens/imagem.png";
 
         Image imagem  = new Image(caminhoImagem);
 

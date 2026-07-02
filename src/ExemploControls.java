@@ -10,10 +10,13 @@ public class ExemploControls extends Application {
     @Override 
     public void start(Stage palco) {
         Label label = new Label("Olá, mundo! Sou uma label.");
+        label.setStyle("-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-font-style: italic; -fx-font-weight: bold;");
 
         Button botao = new Button("Clique aqui!");
+        botao.setStyle("-fx-font-family:'Verdana'; -fx-font-size: 12px;");
 
         TextField texto = new TextField();
+        texto.setStyle("-fx-font-family: 'Courier New'; -fx-font-size: 16px;");
 
         VBox layout = new VBox(label, botao, texto);
 

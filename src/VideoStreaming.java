@@ -8,7 +8,7 @@ public class VideoStreaming extends Application {
         WebView webView = new WebView();
 
         String urlVideo;
-        urlVideo = "https://github.com/DaviOrtolan";
+        urlVideo = "https://www.google.com/?hl=pt_BR&zx=1782997306767";
 
         webView.getEngine().load(urlVideo);
         Scene cena = new Scene(webView);

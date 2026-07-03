@@ -10,17 +10,18 @@ public class ExemploControls extends Application {
     @Override 
     public void start(Stage palco) {
         Label label = new Label("Olá, mundo! Sou uma label.");
-        label.setStyle("-fx-font-family: 'Arial'; -fx-font-size: 14px; -fx-font-style: italic; -fx-font-weight: bold;");
+        label.getStyleClass().add("label");
 
         Button botao = new Button("Clique aqui!");
-        botao.setStyle("-fx-font-family:'Verdana'; -fx-font-size: 12px;");
+        botao.getStyleClass().add("botao");
 
         TextField texto = new TextField();
-        texto.setStyle("-fx-font-family: 'Courier New'; -fx-font-size: 16px;");
+        texto.getStyleClass().add("texto");
 
         VBox layout = new VBox(label, botao, texto);
 
         Scene cena = new Scene(layout, 300, 200);
+        cena.getStylesheets().add("file:///C:/Users/davim/OneDrive/Documentos/projeto_JavaFX/src/styles.css");
 
         palco.setScene(cena);
         palco.show();
